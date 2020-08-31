@@ -10,7 +10,6 @@ function UrlExists(url, cb){
     });
 }
 
-var int = setInterval(setup, 1000);
 setup();
 
 window.onhashchange = function() {
@@ -31,10 +30,10 @@ function setup(){
                 $("#alert").hide();
                 $("#player").append("<source src='/hls/" + key + ".m3u8' type='application/x-mpegURL' />");
                 var player = videojs('#player');
-                clearInterval(int);
             }
             else{
                 $("#alert").show();
+                setTimeout(setup, 3000);
             }
         });
     }
