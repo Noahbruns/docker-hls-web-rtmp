@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Live Stream</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="/video-js/video-js.min.css" rel="stylesheet">
+		<script src="/video-js/video.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="container">
+			<div class='head'>
+				<div ><img src="sk_logo.svg" width="100px"/></div>
+				<div class='head-text'>Live Stream</div>
+				<div id="name" class='head-subtext'></div>
+			</div>
+
+			<div id="alert" class="alert" style="display: none;" role="alert">
+				Livestream ist derzeit nicht aktiv.
+			</div>
+				
+			<video id="player" class="video-js vjs-default-skin vjs-big-play-centered vjs-16-9" controls preload="auto">
+				
+			</video>
+		</div>
+
+		<script src="/jquery.js"></script>
+		<script src="/load.js"></script>
+	</body>
+</html>
