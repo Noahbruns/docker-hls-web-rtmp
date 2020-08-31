@@ -19,6 +19,8 @@ The *html* Directory contains the Served html/css/js files that can by changed i
 
 ## To Stream
 
+This Server can handle multiple Streams at once. Each Stream must be assigned to an distinct *<stream_key>* which can be freely selected. It must be an arbitrary string containing lowercase letters and numbers.
+
 **Stream live RTMP content to:**
 ```
 rtmp://<server address>/live/<stream_key>
