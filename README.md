@@ -44,3 +44,8 @@ http://<server address>/#<stream_key>
 ```
 rtmp://<server address>/live/<stream_key>
 ```
+
+**Statistics etc.**
+```
+http://<server address>/stats
+```
