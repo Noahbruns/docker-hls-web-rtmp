@@ -19,7 +19,7 @@ window.onhashchange = function() {
 
 function setup(){
     if (window.location.hash == '') {
-        window.location.hash = 'test';
+        window.location.hash = 'stream';
     }
     else {
         var key = location.hash.replace('#','');
