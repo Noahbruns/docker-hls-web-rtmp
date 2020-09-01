@@ -5,6 +5,7 @@
 		<title>Live Stream</title>
 		<link rel="stylesheet" href="style.css">
 		<link href="/video-js/video-js.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
 		<script src="/video-js/video.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -20,7 +21,7 @@
 			</div>
 
 			<div id="alert" class="alert" style="display: none;" role="alert">
-				Livestream ist derzeit nicht aktiv.
+				<i class='fa fa-times-circle'></i> Livestream <span id="stream-name"></span> ist derzeit nicht aktiv.
 			</div>
 			
 			<video id="player" class="video-js vjs-default-skin vjs-big-play-centered vjs-16-9" controls preload="auto">

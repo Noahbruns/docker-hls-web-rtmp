@@ -1,5 +1,5 @@
 body {
-    background-color: #222;
+    background-color: #2d2d2d;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -31,9 +31,13 @@ body {
 
 .alert {
     padding: 20px;
-    background-color: #E50000;
+    background-color: #f44336;
     margin: 20px 0px;
     border-radius: 5px;
+}
+
+.alert span {
+    font-style: italic;
 }
 
 #list {
@@ -43,7 +47,7 @@ body {
 }
 
 .stream {
-    background-color: #aaa;
+    background-color: #616161;
     border: none;
     color: white;
     padding: 8px 16px;
