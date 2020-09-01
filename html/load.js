@@ -26,9 +26,13 @@ function listStreams() {
             streams = $(xml).find('stream');
 
             if (streams.length == 0) {
-                $("#list").append("<div class='inactive'>Derzeit kein Livestream aktiv</div>");
+                $("#list").append("<span class='head-subtext'>Derzeit ist kein Livestream aktiv</span>");
             }
             else {
+                if (location.hash == '') {
+                    $("#list").append("<span class='head-subtext'>Wähle einen Stream:</span>");
+                }
+
                 $(xml).find('stream').each(function(){
                     var name = $(this).find("name").text()
 
