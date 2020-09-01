@@ -18,6 +18,7 @@ body {
     font-weight: 600;
     font-size: 20px;
     padding: 12px;
+    margin-left: 4px;
 }
 
 .head-subtext {
@@ -31,4 +32,36 @@ body {
     background-color: #E50000;
     margin: 20px 0px;
     border-radius: 5px;
+}
+
+#list {
+    margin-left: 3px;
+}
+
+.stream {
+    background-color: #aaa;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.stream.active {
+    background-color: #f44336;
+}
+
+.stream:hover {
+    background-color: #f44336; /* Green */
+    color: white;
+}
+
+.inactive {
+    font-style: italic;
 }

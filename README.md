@@ -19,7 +19,7 @@ The *html* Directory contains the Served html/css/js files that can by changed i
 
 ## To Stream
 
-This Server can handle multiple Streams at once. Each Stream must be assigned to an distinct *<stream_key>* which can be freely selected. It must be an arbitrary string containing lowercase letters and numbers.
+This Server can handle multiple Streams at once. Each Stream must be assigned to an distinct *<stream_key>* which can be freely selected. It must be an arbitrary string containing letters or numbers.
 
 **Stream live RTMP content to:**
 ```
@@ -36,11 +36,11 @@ Stream Key: <stream_key>
 ## To Watch
 
 **To watch Stream in the Web Browser**
-
-If no *#<stream_key>* is added it will be set to *#stream*
 ```
 http://<server address>/#<stream_key>
 ```
+
+If no #<stream_key> is added the active Streams are listed and the user can select one by clicking the button in the header.
 
 **To watch Stream in VLC or any other rtmp player use**
 ```
