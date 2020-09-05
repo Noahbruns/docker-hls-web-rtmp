@@ -33,7 +33,7 @@ function listStreams() {
                     $("#list").append("<span class='head-subtext'><i class='fa fa-angle-double-right'></i> Wähle einen Stream:</span>");
                 }
 
-                $(xml).find('stream').each(function(){
+                streams.each(function(){
                     var name = $(this).find("name").text()
 
                     $("#list").append(
@@ -46,6 +46,10 @@ function listStreams() {
                         "</button>"
                     );
                 });
+
+                if (streams.length == 1 && location.hash == '') {
+                    location.hash = streams.first().find("name").text();
+                }
             }
         }
     });
